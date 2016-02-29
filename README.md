@@ -1,0 +1,36 @@
+# Float Utility #
+
+The float utility contains helper classes for the CSS float property.
+
+
+### Installation ###
+
+```
+npm install --save iotacss-float
+```
+
+
+### Dependencies ###
+
+* [Settings.Default](https://github.com/iotacss/settings.default)
+* [Settings.Breakpoint](https://github.com/iotacss/settings.breakpoint)
+
+
+### Options ###
+
+```
+$doppio-float--res : false !default;
+```
+
+
+### Classes ###
+
+```
+.u-float-left
+.u-float-right
+
+
+// Responsive Class Syntax
+
+.u-[name]@[breakpoint-name]  // Example: .u-float-left@sm
+```

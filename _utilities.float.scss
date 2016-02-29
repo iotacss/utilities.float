@@ -1,0 +1,52 @@
+// Float Utilities
+
+
+
+
+// Dependencies:
+//   Settings.Default
+//   Settings.Breakpoint
+
+
+
+
+// Options
+
+$iota-float      : true;
+$iota-float--res : false !default;
+
+
+
+
+.#{$iota-utility-namespace}float-left {
+  float: left !important;
+}
+
+.#{$iota-utility-namespace}float-right {
+  float: right !important;
+}
+
+
+
+
+// Responsive Float Utilities
+
+@if ($iota-float--res == true) {
+
+  @each $name, $size in $iota-breakpoint-sizes {
+
+    @media #{$size} {
+    
+      .#{$iota-utility-namespace}float-left\@#{$name} {
+        float: left !important;
+      }
+
+      .#{$iota-utility-namespace}float-right\@#{$name} {
+        float: right !important;
+      }
+
+    }
+
+  }
+  
+}
