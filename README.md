@@ -20,6 +20,8 @@ npm install --save iotacss-float
 
 ```
 $doppio-float--res : false !default;
+$iota-float-left-namespace  : 'float-left';
+$iota-float-right-namespace : 'float-right';
 ```
 
 

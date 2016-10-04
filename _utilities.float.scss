@@ -12,17 +12,19 @@
 
 // Options
 
-$iota-float      : true;
-$iota-float--res : false !default;
+$iota-float                 : true;
+$iota-float--res            : false !default;
+$iota-float-left-namespace  : 'float-left' !default;
+$iota-float-right-namespace : 'float-right' !default;
 
 
 
 
-.#{$iota-utility-namespace}float-left {
+.#{$iota-utility-namespace}#{$iota-float-left-namespace} {
   float: left !important;
 }
 
-.#{$iota-utility-namespace}float-right {
+.#{$iota-utility-namespace}#{$iota-float-right-namespace} {
   float: right !important;
 }
 
@@ -37,11 +39,11 @@ $iota-float--res : false !default;
 
     @media #{$size} {
     
-      .#{$iota-utility-namespace}float-left\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-float-left-namespace}\@#{$name} {
         float: left !important;
       }
 
-      .#{$iota-utility-namespace}float-right\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-float-right-namespace}\@#{$name} {
         float: right !important;
       }
 
