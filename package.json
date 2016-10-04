@@ -1,6 +1,6 @@
 {
   "name": "iotacss-float",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Float utility for iotaCSS",
   "main": "_utilities.float.scss",
   "repository": {
