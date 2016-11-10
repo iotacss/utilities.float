@@ -6,28 +6,25 @@ The float utility contains helper classes for the CSS float property.
 ### Installation ###
 
 ```
-npm install --save iotacss-float
+npm install --save iotacss-utils-float
 ```
-
-
-### Dependencies ###
-
-* [Settings.Default](https://github.com/iotacss/settings.default)
-* [Settings.Breakpoint](https://github.com/iotacss/settings.breakpoint)
 
 
 ### Options ###
 
-```
-$iota-float--res            : false !default;
-$iota-float-left-namespace  : 'float-left';
-$iota-float-right-namespace : 'float-right';
+```sass
+$iota-utils-float-namespace             : 'float-' !default;
+$iota-utils-float-left-name             : 'left' !default;
+$iota-utils-float-right-name            : 'right' !default;
+
+$iota-utils-float-res                   : false !default;
+$iota-utils-float-breakpoints           : $iota-global-breakpoints !default;
 ```
 
 
 ### Classes ###
 
-```
+```css
 .u-float-left
 .u-float-right
 
